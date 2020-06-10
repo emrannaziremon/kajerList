@@ -23,7 +23,7 @@
         font-family: 'Sriracha', cursive;
     } */
     .item p {
-        font-family: 'Sriracha', cursive;
+        font-family: 'Muli', sans-serif;
     }
 </style>
 
@@ -33,12 +33,17 @@
     <p>Hello, I am <code>p</code> tag </p> -->
     <div class="container">
         <div class="header">
+            
+            <div id="date"></div>
+        </div>
+       
+        <div class="content">
+            <div class="todo">
+                <h2>ToDo List</h2>
+            </div>
             <div class="clear">
                 <i class="fa fa-refresh"></i>
             </div>
-            <div id="date"></div>
-        </div>
-        <div class="content">
             <ul id="list">
                 <!-- <li class="item">
                     <i class="fa fa-circle-thin co" job = 'complete' id="0"></i>
@@ -48,18 +53,28 @@
             </ul>
         </div>
         <div class="add-to-do">
-            <i class="fa fa-plus-circle"></i>
-            <input type="text" id="input" placeholder="Add a to-do">
+            <input type="text" id="input" placeholder="add task">
+
+            <!-- <i class="fa fa-plus-circle toggler" onclick="myFunc()"></i> -->
+        <button onclick="myFunc()">+</button>
+
         </div>
+
     </div>
 
     <!-- <div id="one">one</div> -->
 
     <script src="js/app.js"></script>
-   <!--  <script type="text/javascript">
-        var d1 = document.getElementById('one');
-        d1.insertAdjacentHTML('afterbegin', '<div id="two">Hey Two</div>');
-    </script> -->
+    <script type="text/javascript">
+      function myFunc() {
+          var x = document.getElementById('input');
+          if (x.style.display === 'block') {
+              x.style.display = 'none';
+          } else {
+              x.style.display = 'block';
+          }
+      }
+    </script>
 </body>
 
 </html>
