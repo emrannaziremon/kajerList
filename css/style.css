@@ -37,9 +37,9 @@ body {
 #date {
     position: absolute;
     top: 13%;
-    left: 25%;
+    left: 20%;
     color: #726a95;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Muli', sans-serif;
 }
 
@@ -53,7 +53,7 @@ body {
 
 button {
     font-size: 40px;
-    background: #3b55d6;
+    background: linear-gradient(to right, #a586bc, #6e84b1);
     border: none;
     border-radius: 30px;
     padding: 4px 15px;
@@ -64,6 +64,7 @@ button {
     outline: none;
     transition: .2s;
 }
+
 
 button:hover {
     transform: rotate(45deg);
