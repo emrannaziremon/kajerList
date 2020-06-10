@@ -79,7 +79,7 @@ button:hover {
 /* ------------ content ------------ */
 .content {
     width: 380px;
-    height: 370px;
+    height: 390px;
     max-height: 415px;
     overflow: auto;
     position: relative;
